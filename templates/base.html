@@ -40,12 +40,55 @@
 
   <body>
     <header>
-        <span>LOGO</span>
+        <!-- Logo -->
+        <a href="{% url 'home' %}">
+            <span id="logo">Skin<strong>Cared</strong></span>
+        </a>
+        <!-- Serach Bar -->
+        <div>
+            <form method="GET" action="">
+                <div>
+                    <input type="text" name="q" placeholder="Serach for products, brands and inspiration">
+                    <div>
+                        <button>
+                            <span>
+                                <i class="fas fa-serach"></i>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
 
-        <nav> Navigation Menu </nav>
+        <div>
+            <ul>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+
     </header>
 
-    <footer> Footer Section </footer>
+        <!-- Navigation Bar -->
+        <nav id="navigation-bar">
+            <ul>
+                <li>
+                    <a>Skincare</a>
+                </li>
+                <li>
+                    <a>Brands</a>
+                </li>
+                <li>
+                    <a>Skin Type</a>
+                </li>
+                <li>
+                    <a>Skin Concern</a>
+                </li>
+            </ul>
+
+        </nav>
+
+  
 
     {% if messages %}
         <div class="message-container"></div>
@@ -56,6 +99,8 @@
 
     {% block content %}
     {% endblock %}
+
+    <footer> Footer Section </footer>
 
     {% block postloadjs %}
     {% endblock %}
