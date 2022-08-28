@@ -8,6 +8,41 @@ html{
     font-size: 62.5%;
 }
 
-/* Logo */
+/* Header - Logo, Serach Bar, Account & Basket  */
 
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 
+#logo {
+    font-size: 5rem;
+    margin-left: 20px;
+}
+
+#serach-bar {
+    width: 60%;
+}
+
+#serach-bar input {
+    width: 100%;
+    border-radius: 5px;
+}
+
+#account-shoppingcart {
+    background-color: red;
+    margin-right: 20px;
+}
+
+#account-shoppingcart ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+  
+}
+
+#account-shoppingcart li {
+    margin: 10px;
+}
