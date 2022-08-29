@@ -96,7 +96,14 @@
                 <li>
                     <a href="">
                         <span class="material-symbols-outlined">shopping_bag</span>
-                        <p>SHOPPING BAG</p>
+                        <p>SHOPPING BAG
+                            {% if grand_total %}
+                            ${{ grand_total|floatformat:2 }}
+                        {% else %}
+                            $0.00
+                        </p>
+                     
+                    {% endif %}
                     </a>
                 </li>
             </ul>

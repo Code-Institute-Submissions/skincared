@@ -6,6 +6,6 @@ console.log(userProfileIcon)
 console.log(userProfileDropDown)
 
 userProfileIcon.addEventListener("click", function(){
-    userProfileDropDown.classList.toggle("active"); 
+    userProfileDropDown.classList.toggle("profile-active"); 
 })
 
