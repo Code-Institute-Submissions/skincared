@@ -32,8 +32,8 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 20px;
     font-family: 'Montserrat', sans-serif;
+    padding-left: 50px;
 }
 
 #logo {
@@ -54,11 +54,12 @@ header {
 }
 
 #serach-bar {
-    width: 50%; 
+    width: 50%;
+    display: block;
 }
 
 #serach-bar input {
-    width: 97%;
+    width: 95%;
     height: 30px;
 }
 
@@ -68,11 +69,11 @@ header {
     outline: none;
     font-size: 1.5rem;
     padding: 2px;
-    margin: 2px; 
+    margin: 2px;
+    display: inline-block;
 }
 
 #user-profile-shoppingcart-container {
-    margin-right: 20px;
     text-align: center;
 }
 
@@ -82,7 +83,7 @@ header {
 }
 
 #user-profile-shoppingcart-container li {
-    padding: 20px;
+    padding-right: 50px;
 }
 
 #user-profile-shoppingcart-container a {
@@ -103,6 +104,6 @@ header {
 }
 
 .user-profile-drop-down-menu a {
-    padding-bottom: 5px;
+    padding: 5px;
 }
 
