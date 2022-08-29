@@ -26,7 +26,8 @@
     {% endblock %}
 
     {% block corejs %}
-    <!-- FontAwesome-->
+    <!-- FontAwesome-->  
+    <script src="https://kit.fontawesome.com/cd2a226592.js" crossorigin="anonymous"></script>
     <!-- jQuery, Bootstrap-->
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -50,13 +51,11 @@
             <form method="GET" action="">
                 <div>
                     <input type="text" name="q" placeholder="Serach for products, brands and inspiration">
-                    <div>
-                        <button>
+                        <button id="serach-bar-button">
                             <span>
-                                <i class="fas fa-serach"></i>
+                                <i class="fa-solid fa-magnifying-glass"></i>
                             </span>
                         </button>
-                    </div>
                 </div>
             </form>
         </div>
@@ -65,9 +64,15 @@
             <ul>
                 <a>
                     <li>My Account</li>
+                    <i class="fa-solid fa-user"></i>
+                </a>
+
+                <a>
+                    <li>Shopping Cart</li>
+                    <i class="fa-solid fa-cart-shopping"></i>
                 </a>
                
-                <li>Shopping Cart</li>
+               
             </ul>
         </div>
 

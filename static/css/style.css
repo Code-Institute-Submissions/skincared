@@ -23,12 +23,18 @@ header {
 }
 
 #serach-bar {
-    width: 60%;
+    width: 60%; 
 }
 
 #serach-bar input {
-    width: 100%;
+    width: 97%;
+    height: 25px;
+}
+
+#serach-bar-button {
     border-radius: 5px;
+    background: none;
+    font-size: 1.5 rem;
 }
 
 #account-shoppingcart {
