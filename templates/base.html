@@ -70,32 +70,32 @@
         <div id="user-profile-shoppingcart-container">
             <ul>
                 <div id="user-profile-container">
-                    <a href="">
-                        <li>
+                    <li>
+                        <a href="#">
                             <span class="material-symbols-outlined">person</span>
                             <p>MY ACCOUNT</p>
-                        </li>
-                    </a>
-                    <div class="user-profile-drop-down-menu">
-                        {% if request.useris_authenticated %}
-                            {% if request.user.is_superuser %}
-                            <a href=""> Product Management</a>
+                        </a>
+                        <div class="user-profile-drop-down-menu">
+                            {% if request.useris_authenticated %}
+                                {% if request.user.is_superuser %}
+                                <a href="">PRODUCT MANAGEMENT</a>
+                                {% endif %}
+                                <a href="">PROFILE</a>
+                                <a href="{% url 'account_logout' %}">LOGOUT</a>
+                            {% else %}
+                                <a href="{% url 'account_signup' %}">REGISTER</a>
+                                <a href="{% url 'account_login' %}">LOGIN</a>
                             {% endif %}
-                            <a href="">Profile</a>
-                            <a href="{% url 'account_logout' %}">Logout</a>
-                        {% else %}
-                            <a href="{% url 'account_signup' %}">Register</a>
-                            <a href="{% url 'account_login' %}">Login</a>
-                        {% endif %}
-                    </div>
+                        </div>
+                    </li>
                 </div>
 
-                <a href="">
-                    <li>
+                <li>
+                    <a href="">
                         <span class="material-symbols-outlined">shopping_bag</span>
-                        <p>SHOPPING CART</p>
-                    </li>
-                </a>
+                        <p>SHOPPING BAG</p>
+                    </a>
+                </li>
             </ul>
         </div>
 
