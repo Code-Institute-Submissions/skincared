@@ -46,9 +46,13 @@
   <body>
     <header>
         <!-- Logo -->
-        <a href="{% url 'home' %}">
-            <span id="logo"><strong>S</strong>kin<strong>C</strong>are<strong>D</strong></span>
-        </a>
+        <div id="logo-container">
+            <a href="{% url 'home' %}">
+                <span id="logo"><strong>S</strong>kin<strong>C</strong>are<strong>D</strong></span>
+            </a>
+            <p id="logo-slogan"><strong>Science, Cosmetics & Dermatology</strong></p>
+        </div>
+        
         <!-- Serach Bar -->
         <div id="serach-bar">
             <form method="GET" action="">
@@ -63,26 +67,27 @@
             </form>
         </div>
 
-        <div id="account-shoppingcart">
+        <div id="user-profile-shoppingcart-container">
             <ul>
-                <a href="">
-                    <li>
-                        <span class="material-symbols-outlined">person</span>
-                        <p>MY ACCOUNT</p>
-                    </li>
-                </a>
-                <div class="header-drop-down-menu">
-                    {% if request.useris_authenticated %}
-                        {% if request.user.is_superuser %}
-                        <a href=""> Product Management</a>
+                <div id="user-profile-container">
+                    <a href="">
+                        <li>
+                            <span class="material-symbols-outlined">person</span>
+                            <p>MY ACCOUNT</p>
+                        </li>
+                    </a>
+                    <div class="user-profile-drop-down-menu">
+                        {% if request.useris_authenticated %}
+                            {% if request.user.is_superuser %}
+                            <a href=""> Product Management</a>
+                            {% endif %}
+                            <a href="">Profile</a>
+                            <a href="{% url 'account_logout' %}">Logout</a>
+                        {% else %}
+                            <a href="{% url 'account_signup' %}">Register</a>
+                            <a href="{% url 'account_login' %}">Login</a>
                         {% endif %}
-                        <a href="">Profile</a>
-                        <a href="">Logout</a>
-                    {% else %}
-                        <a href="">Register</a>
-                        <a href="">Login</a>
-                    {% endif %}
-
+                    </div>
                 </div>
 
                 <a href="">
