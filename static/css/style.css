@@ -15,10 +15,6 @@ ul {
     list-style-type: none;
 }
 
-li a {
-    color: black;
-}
-
 a:hover {
     text-decoration: none;
 }
@@ -46,8 +42,15 @@ header {
     color: black;
 }
 
+#logo strong {
+    text-shadow: 1px 1px #C0C0C0; 
+}
+
 #logo-slogan {
     letter-spacing: 2.5px;
+    background-color: black;
+    color: white;
+    padding: 2px; 
 }
 
 #serach-bar {
@@ -79,11 +82,25 @@ header {
 }
 
 #user-profile-shoppingcart-container li {
-    padding: 20px; 
+    padding: 20px;
 }
 
+#user-profile-shoppingcart-container a {
+    color: black;
+}
+
+
 .user-profile-drop-down-menu {
+    display: none;
+}
+
+.active {
+    display: block;
     display: flex;
     flex-direction: column;
+}
+
+.user-profile-drop-down-menu a {
+    padding-bottom: 5px;
 }
 
