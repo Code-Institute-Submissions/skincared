@@ -47,7 +47,7 @@
     <header>
         <!-- Logo -->
         <a href="{% url 'home' %}">
-            <span id="logo">Skin<strong>Cared</strong></span>
+            <span id="logo"><strong>S</strong>kin<strong>C</strong>are<strong>D</strong></span>
         </a>
         <!-- Serach Bar -->
         <div id="serach-bar">
@@ -65,17 +65,32 @@
 
         <div id="account-shoppingcart">
             <ul>
-                <a>
-                    <li>My Account</li>
-                    <span class="material-symbols-outlined">person</span>
+                <a href="">
+                    <li>
+                        <span class="material-symbols-outlined">person</span>
+                        <p>MY ACCOUNT</p>
+                    </li>
                 </a>
+                <div class="header-drop-down-menu">
+                    {% if request.useris_authenticated %}
+                        {% if request.user.is_superuser %}
+                        <a href=""> Product Management</a>
+                        {% endif %}
+                        <a href="">Profile</a>
+                        <a href="">Logout</a>
+                    {% else %}
+                        <a href="">Register</a>
+                        <a href="">Login</a>
+                    {% endif %}
 
-                <a>
-                    <li>Shopping Cart</li>
-                    <span class="material-symbols-outlined">shopping_bag</span>
+                </div>
+
+                <a href="">
+                    <li>
+                        <span class="material-symbols-outlined">shopping_bag</span>
+                        <p>SHOPPING CART</p>
+                    </li>
                 </a>
-               
-               
             </ul>
         </div>
 
