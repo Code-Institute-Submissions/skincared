@@ -19,6 +19,11 @@ a:hover {
     text-decoration: none;
 }
 
+
+hr {
+    border-bottom: 1px solid black;
+}
+
 /* Header - Logo, Serach Bar, Account & Basket  */
 
 header {
@@ -57,21 +62,31 @@ header {
 }
 
 #serach-bar {
-    width: 50%;
+    width: 35%;
+    height: 60px; 
+    background-color: white; 
+    border-radius: 30px;
+    /* background-color: red; */
 }
 
 #serach-bar input {
     width: 95%;
     height: 30px;
+    border: none;
+    outline: none; 
 }
 
 #serach-bar-button {
-    border-radius: 5px;
     background: none;
-    outline: none;
-    font-size: 1.5rem;
-    padding: 2px;
-    margin: 2px;
+	color: inherit;
+	border: none;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.search-icon {
+    padding-top: 20px;
 }
 
 #user-profile-shoppingcart-container {
@@ -101,9 +116,6 @@ header {
 .profile-active {
     display: flex; 
     flex-direction: column;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
     position: absolute;
     margin-left: 6px; 
 }
