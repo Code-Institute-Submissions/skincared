@@ -30,7 +30,7 @@ hr {
 }
 
 ::placeholder {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-transform: uppercase;
   }
 
@@ -71,39 +71,34 @@ header {
     padding: 2px; 
 }
 
-#serach-bar {
-    width: 35%;
-    height: 60px; 
-    background-color: white; 
-    background-color: red;
+#serach-bar-container {
+    width: 20%;
 }
 
-#serach-bar input {
-    width: 95%;
-    height: 30px;
+.serach-bar {
+    display: flex;
+    align-items: center;
+}
+
+.serach-bar input {
+    width: 100%;
+    height: 20px;
     border: none;
     outline: none;
-    /* background-color: red; */
 }
 
-#serach-bar-button {
+.serach-bar-button {
     background: none;
 	color: inherit;
 	border: none;
 	font: inherit;
 	cursor: pointer;
 	outline: inherit;
-    width: 10px; 
-    height: 10px;
-    border-radius: 50%; 
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
 }
 
-/* .search-icon {
-    padding-top: 20px;
-} */
+.search-icon {
+
+}
 
 #user-profile-shoppingcart-container {
     text-align: center;
@@ -145,3 +140,4 @@ header {
     width: 900px; 
     background-color: purple; 
 }
+

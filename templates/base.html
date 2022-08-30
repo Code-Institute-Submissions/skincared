@@ -22,7 +22,6 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <!-- Google Material Icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,-25">
-    
     {% endblock %}
 
     {% block extra_css %}
@@ -55,16 +54,16 @@
         </div>
         
         <!-- Serach Bar -->
-        <div id="serach-bar">
+        <div id="serach-bar-container">
             <form method="GET" action="">
-                <div>
-                    <input type="text" name="q" placeholder="Serach for products, brands and inspiration">
-                    <button id="serach-bar-button">
+                <div class="serach-bar">
+                    <button class="serach-bar-button">
                         <span class="material-symbols-outlined search-icon">search</span>
                     </button>
-                    <hr>
+                    <input type="text" name="q" placeholder="Serach for products, brands and inspiration">
                 </div>
             </form>
+            <hr>
         </div>
 
         <div id="user-profile-shoppingcart-container">
@@ -82,12 +81,17 @@
                             {% if request.useris_authenticated %}
                                 {% if request.user.is_superuser %}
                                 <a href="">PRODUCT MANAGEMENT</a>
+                                <hr>
                                 {% endif %}
                                 <a href="">PROFILE</a>
+                                <hr>
                                 <a href="{% url 'account_logout' %}">LOGOUT</a>
+                                <hr>
                             {% else %}
                                 <a href="{% url 'account_signup' %}">REGISTER</a>
+                                <hr>
                                 <a href="{% url 'account_login' %}">LOGIN</a>
+                                <hr>
                             {% endif %}
                         </div>
                     </li>
