@@ -16,12 +16,12 @@
     {% endblock %}
 
     {% block corecss %}
-    <!-- Google Material Icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!-- Google Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,-25">
     
     {% endblock %}
 
@@ -110,7 +110,6 @@
                 </li>
             </ul>
         </div>
-
     </header>
 
         <!-- Navigation Bar -->
@@ -129,8 +128,11 @@
                     <a>Skin Concern</a>
                 </li>
             </ul>
-
         </nav>
+
+        <div class="re">
+            
+        </div>
 
     {% if messages %}
         <div class="message-container"></div>
