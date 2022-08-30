@@ -88,20 +88,24 @@ header {
 }
 
 #user-profile-container {
-    position: absolute;
-    right: 120px;
+    margin-right: 40px;
 }
 
 .user-profile-drop-down-menu {
     display: none;
+
+
+  
 }
 
 .profile-active {
-    display: flex;
+    display: flex; 
     flex-direction: column;
     align-items: center;
+    align-content: center;
     justify-content: center;
-   
+    position: absolute;
+    margin-left: 6px; 
 }
 
 .user-profile-drop-down-menu a {
