@@ -30,7 +30,7 @@ hr {
 }
 
 ::placeholder {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     text-transform: uppercase;
   }
 
@@ -78,6 +78,7 @@ header {
 .serach-bar {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .serach-bar input {
@@ -97,7 +98,8 @@ header {
 }
 
 .search-icon {
-
+    transform: rotate(90deg);
+    margin-right: 5px;
 }
 
 #user-profile-shoppingcart-container {
