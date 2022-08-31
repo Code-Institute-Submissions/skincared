@@ -55,7 +55,7 @@ header {
     height: 125px;
     background-color: black;
     border-radius: 4px;
-    box-shadow: -2px -2px #ffffff, -4px -4px #353935;
+    box-shadow: -1px -1px #ffffff, -2px -2px #353935, 1px 1px #ffffff, 2px 2px #353935, -2px -2px #ffffff, -3px -3px #353935, 3px 3px #ffffff, 4px 4px #353935,  -4px -4px #ffffff, -5px -5px #353935, 5px 5px #ffffff, 6px 6px #353935, -6px -6px #ffffff 
 }
 
 .logo {
