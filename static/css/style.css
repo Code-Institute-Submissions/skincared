@@ -24,7 +24,7 @@ a:hover {
 
 
 hr {
-    border-bottom: 0.5px solid black;
+    border-bottom: 0.5px solid #000000;
    
 }
 
@@ -40,7 +40,7 @@ header {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: white;
+    background-color: #ffffff;
     margin-top: 20px;
     position: sticky;
     top: 0;
@@ -53,7 +53,7 @@ header {
     font-family: 'Raleway', sans-serif;
     width: 125px;
     height: 125px;
-    background-color: black;
+    background-color: #000000;
     border-radius: 4px;
     box-shadow: -1px -1px #ffffff, -2px -2px #353935, 1px 1px #ffffff, 2px 2px #353935, -2px -2px #ffffff, -3px -3px #353935, 3px 3px #ffffff, 4px 4px #353935,  -4px -4px #ffffff, -5px -5px #353935, 5px 5px #ffffff, 6px 6px #353935, -6px -6px #ffffff 
 }
@@ -61,7 +61,7 @@ header {
 .logo {
     font-size: 5.5rem;
     text-decoration: none;
-    color: white;
+    color: #ffffff;
     text-shadow: 3px 3px #353935;
 }
 
