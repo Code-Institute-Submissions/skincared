@@ -121,26 +121,9 @@
     </header>
 
         <!-- Navigation Bar -->
-        <nav id="navigation-bar">
-            <ul>
-                <li>
-                    <a>Skincare</a>
-                </li>
-                <li>
-                    <a>Brands</a>
-                </li>
-                <li>
-                    <a>Skin Type</a>
-                </li>
-                <li>
-                    <a>Skin Concern</a>
-                </li>
-            </ul>
+        <nav id="navigation-bar-container">
+            {% include 'includes/main-navigation.html' %}
         </nav>
-
-        <div class="re">
-
-        </div>
 
     {% if messages %}
         <div class="message-container"></div>

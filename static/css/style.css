@@ -143,9 +143,18 @@ header {
     padding: 5px;
 }
 
-.re {
-    height: 900px;
-    width: 900px; 
-    background-color: purple; 
+
+/* Navigation Menu - */
+
+#navigation-bar-container{
+    background-color: #000000; 
+    display: flex;
+    flex-direction: row;
+    height: 50px; 
+    width: 100vw;
+    margin-top: 20px;
 }
 
+#navigation-items-container {
+    background-color: red;
+}
