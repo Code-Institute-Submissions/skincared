@@ -261,13 +261,7 @@ footer div {
     cursor: pointer;
 }
 
-.test {
-    width: 100%; 
-    height: 200px;
-    background-color: #000000;
-}
-
-.active {
+.mobile-nav-bar{
     display: none;
 }
 
@@ -278,6 +272,18 @@ footer div {
 
 .search-bar-mobile {
     margin-right: 25px;
+    cursor: pointer;
+}
+
+.mobile-serach-bar-container {
+    width: 100%;
+    display: none;
+    background-color: #ffffff;
+    margin-top: 10px;
+}
+
+.active {
+    display: block;
 }
 
 /* Logo */

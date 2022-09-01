@@ -6,14 +6,21 @@ userProfileIcon.addEventListener("click", function(){
     userProfileDropDown.classList.toggle("profile-active"); 
 })
 
-// Mobile Header Dropdowns 
+// Mobile Navigation Dropdown 
 const hamburger = document.querySelector(".burger-menu"); 
-const navMenu = document.querySelector(".test"); 
-
-console.log(hamburger)
-
-console.log(navMenu)
+const navMenu = document.querySelector(".mobile-nav-bar"); 
 
 hamburger.addEventListener("click", () => {
     navMenu.classList.toggle("active");  
+})
+
+// Mobile Serach Bar Dropdown 
+const searchIcon = document.querySelector(".search-bar-mobile"); 
+const search = document.querySelector(".mobile-serach-bar-container");
+
+console.log(searchIcon)
+console.log(search)
+
+searchIcon.addEventListener("click", () =>{
+    search.classList.toggle("active");
 })

@@ -1,29 +1,14 @@
-<div class="test">
-
-</div>
-
 <header class="mobile-header-container">
     <div class="burger-menu-serach-bar-container">
         <div class="burger-menu">
             <i class="fa-solid fa-bars"></i>
         </div>
-        <div class="mobile-header-icons-divider">
-        </div>
+        <div class="mobile-header-icons-divider"></div>
         
-          <!-- Serach Bar -->
+          <!-- Serach Bar Icon -->
           <div id="serach-bar-container" class="search-bar-mobile">
-            <button class="serach-bar-button">
                 <span class="material-symbols-outlined search-icon">search</span>
-            </button>
-            <!-- <form method="GET" action="">
-                <div class="serach-bar">
-                    <input type="text" name="q" placeholder="search for products, brands, specific skin concern or type">
-                </div>
-            </form>
-            <hr>
-            <hr>
-            <hr> -->
-        </div>
+          </div>
     </div>
 
     <!-- Logo -->
@@ -88,3 +73,22 @@
     </div>
 </header>
 
+<!-- Mobile Drop Down Navigation -->
+<div class="mobile-nav-bar">
+    {% include 'includes/main-navigation.html' %}
+</div>
+
+<!-- Mobile Drop Down Search Bar -->
+<div class="mobile-serach-bar-container">
+    <form method="GET" action="">
+        <div class="serach-bar">
+            <button class="serach-bar-button">
+                <span class="material-symbols-outlined search-icon">search</span>
+            </button>
+            <input type="text" name="q" placeholder="search for products, brands, specific skin concern or type">
+        </div>
+    </form>
+    <hr>
+    <hr>
+    <hr>
+</div>
