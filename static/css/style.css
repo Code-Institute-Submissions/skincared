@@ -55,7 +55,7 @@ header {
     height: 125px;
     background-color: #000000;
     border-radius: 4px;
-    box-shadow: -1px -1px #ffffff, -2px -2px #353935, 1px 1px #ffffff, 2px 2px #353935, -2px -2px #ffffff, -3px -3px #353935, 3px 3px #ffffff, 4px 4px #353935,  -4px -4px #ffffff, -5px -5px #353935, 5px 5px #ffffff, 6px 6px #353935, -6px -6px #ffffff 
+    box-shadow: -1px -1px #ffffff, -2px -2px #353935, 1px 1px #ffffff, 2px 2px #353935, -2px -2px #ffffff, -3px -3px #353935, 3px 3px #ffffff, 4px 4px #353935,  -4px -4px #ffffff, -5px -5px #353935, 5px 5px #ffffff, 6px 6px #353935, -6px -6px #ffffff;  
 }
 
 .logo {
@@ -145,12 +145,19 @@ header {
 
 /* Footer - */
 
-footer {
+.footer-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     font-size: 1.6rem;
     background-color: #f5f5f5;
+   
 }
 
 footer li {
@@ -174,7 +181,6 @@ footer ul {
 footer div {
     margin-top: 10px;
 }
-
 
 /* Navigation Menu - */
 
@@ -224,3 +230,8 @@ footer div {
 }
 
 
+.test {
+    background-color: red;
+    height: 10000px;
+    width: 100000px;;
+}
