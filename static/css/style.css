@@ -34,7 +34,7 @@ hr {
 }
 
 .logo-container, .fa-bars, .navigation-options {
-    box-shadow: -1px -1px #ffffff, -2px -2px #353935, 1px 1px #ffffff, 2px 2px #353935, -3px -3px #ffffff, -4px -4px #353935, 3px 3px #ffffff, 4px 4px #353935,  -4px -4px #ffffff, -5px -5px #353935, 5px 5px #ffffff, 6px 6px #353935;
+    box-shadow: -1px -1px #ffffff, -2px -2px #353935, 1px 1px #ffffff, 2px 2px #353935, -3px -3px #ffffff, -4px -4px #353935, 3px 3px #ffffff, 4px 4px #353935,  -4px -4px #ffffff, -5px -5px #353935, 5px 5px #ffffff, 6px 6px #353935, -5px -5px #ffffff, -5px -5px #353935, 6px 6px #ffffff, 7px 7px #353935;
 }
 
 /* Header: Logo, Serach Bar, User Profile & Shopping Bag   */
@@ -279,7 +279,6 @@ footer div {
     width: 100%;
     display: none;
     background-color: #ffffff;
-    margin-top: 10px;
 }
 
 .active {
