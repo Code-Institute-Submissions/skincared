@@ -1,0 +1,80 @@
+<header>
+    <div>
+        <i class="fa-solid fa-bars"></i>
+    </div>
+      <!-- Serach Bar -->
+      <div id="serach-bar-container">
+        <form method="GET" action="">
+            <div class="serach-bar">
+                <button class="serach-bar-button">
+                    <span class="material-symbols-outlined search-icon">search</span>
+                </button>
+                <input type="text" name="q" placeholder="search for products, brands, specific skin concern or type">
+            </div>
+        </form>
+        <hr>
+        <hr>
+        <hr>
+    </div>
+
+    <!-- Logo -->
+    <div class="logo-container logo-mobile-container">
+        <a href="{% url 'home' %}">
+            <br>
+            <span class="logo logo-top logo-mobile logo-mobile-top"><strong>Skin</strong></span>
+            <br>
+            <span class=" logo logo-bottom logo-mobile logo-mobile-bottom"><strong>Cared!</strong></span>
+
+        </a>
+        <!-- <p>Combining the best in science and cosmetics</p> -->
+    </div>
+
+    <div id="user-profile-shoppingcart-container">
+        <ul>
+            <div id="user-profile-container">
+                <li>
+                    <div id="profile-icon">
+                        <a href="#">
+                            <span class="material-symbols-outlined">person</span>
+                            <p>MY ACCOUNT</p>
+                        </a>
+                    </div>
+                  
+                    <div class="user-profile-drop-down-menu">
+                        {% if request.useris_authenticated %}
+                            {% if request.user.is_superuser %}
+                            <a href="">PRODUCT MANAGEMENT</a>
+                            <hr>
+                            {% endif %}
+                            <a href="">PROFILE</a>
+                            <hr>
+                            <a href="{% url 'account_logout' %}">LOGOUT</a>
+                            <hr>
+                        {% else %}
+                            <a href="{% url 'account_signup' %}">REGISTER</a>
+                            <hr>
+                            <a href="{% url 'account_login' %}">LOGIN</a>
+                            <hr>
+                        {% endif %}
+                    </div>
+                </li>
+            </div>
+
+            <li>
+                <a href="">
+                    <span class="material-symbols-outlined">shopping_bag</span>
+                    <p>SHOPPING BAG
+                        <br>
+                        {% if grand_total %}
+                        ${{ grand_total|floatformat:2 }}
+                    {% else %}
+                        $0.00
+                    </p>
+                 
+                {% endif %}
+                </a>
+            </li>
+        </ul>
+    </div>
+</header>
+

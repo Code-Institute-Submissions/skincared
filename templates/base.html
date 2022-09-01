@@ -46,7 +46,7 @@
   <body>
     <header>
         <!-- Logo -->
-        <div id="logo-container">
+        <div class="logo-container">
             <a href="{% url 'home' %}">
                 <br>
                 <span class="logo logo-top"><strong>Skin</strong></span>
@@ -123,6 +123,7 @@
         <!-- Navigation Bar -->
         <nav class="navigation-bar-container">
             {% include 'includes/main-navigation.html' %}
+            {% include 'includes/mobile-header.html' %}
         </nav>
 
     {% if messages %}
@@ -134,7 +135,7 @@
 
     {% block content %}
     {% endblock %}
-    
+
     <footer class="footer-container">
         <div class="footer">
             <ul>
