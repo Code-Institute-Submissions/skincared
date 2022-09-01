@@ -143,6 +143,38 @@ header {
     padding: 5px;
 }
 
+/* Footer - */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 1.6rem;
+    background-color: #f5f5f5;
+}
+
+footer li {
+    display: inline-block;
+    letter-spacing: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer a:hover {
+    color: #000000; 
+}
+
+footer ul {
+    margin-top: 10px;
+}
+
+footer div {
+    margin-top: 10px;
+}
+
 
 /* Navigation Menu - */
 
@@ -171,13 +203,17 @@ header {
     font-size: 1.6rem;
 }
 
-.navigation-options{ 
+.navigation-options { 
     display: flex;
     flex-direction: column;
     padding: 20px;
-    position: absolute;
     background-color: #f5f5f5;
     display: none;
+}
+
+.nav-heading:hover, .navigation-option {
+    background-color: red;
+    display: block;
 }
 
 .navigation-options h3 {
@@ -189,7 +225,4 @@ header {
     padding-top: 5px;
 }
 
-.nav-active {
-    display: block;
-    background-color: red;
-}
+
