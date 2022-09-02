@@ -1,94 +1,96 @@
-<header class="mobile-header-container">
-    <div class="burger-menu-serach-bar-container">
-        <div class="burger-menu">
-            <i class="fa-solid fa-bars"></i>
+<div id="mobile-header-and-nav-container">
+    <header class="mobile-header-container">
+        <div class="burger-menu-serach-bar-container">
+            <div class="burger-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="mobile-header-icons-divider"></div>
+            
+              <!-- Serach Bar Icon -->
+              <div id="serach-bar-container" class="search-bar-mobile">
+                    <span class="material-symbols-outlined search-icon">search</span>
+              </div>
         </div>
-        <div class="mobile-header-icons-divider"></div>
-        
-          <!-- Serach Bar Icon -->
-          <div id="serach-bar-container" class="search-bar-mobile">
-                <span class="material-symbols-outlined search-icon">search</span>
-          </div>
-    </div>
-
-    <!-- Logo -->
-    <div class="logo-container logo-mobile-container">
-        <a href="{% url 'home' %}">
-            <br>
-            <span class="logo logo-top logo-mobile logo-mobile-top"><strong>Skin</strong></span>
-            <br>
-            <span class=" logo logo-bottom logo-mobile logo-mobile-bottom"><strong>Cared!</strong></span>
-
-        </a>
-        <!-- <p>Combining the best in science and cosmetics</p> -->
-    </div>
-
-    <div id="user-profile-shoppingcart-container" class="user-profile-cart-mobile-container">
-        <ul>
-            <div id="user-profile-container">
+    
+        <!-- Logo -->
+        <div class="logo-container logo-mobile-container">
+            <a href="{% url 'home' %}">
+                <br>
+                <span class="logo logo-top logo-mobile logo-mobile-top"><strong>Skin</strong></span>
+                <br>
+                <span class=" logo logo-bottom logo-mobile logo-mobile-bottom"><strong>Cared!</strong></span>
+    
+            </a>
+            <!-- <p>Combining the best in science and cosmetics</p> -->
+        </div>
+    
+        <div id="user-profile-shoppingcart-container" class="user-profile-cart-mobile-container">
+            <ul>
+                <div id="user-profile-container">
+                    <li>
+                        <br>
+                        <div class="profile-icon">
+                            <a href="#">
+                                <span class="material-symbols-outlined">person</span>
+                                <p>MY ACCOUNT</p>
+                            </a>
+                        </div>
+                      
+                        <div class="user-profile-drop-down-menu">
+                            {% if request.useris_authenticated %}
+                                {% if request.user.is_superuser %}
+                                <a href="">PRODUCT MANAGEMENT</a>
+                                <hr>
+                                {% endif %}
+                                <a href="">PROFILE</a>
+                                <hr>
+                                <a href="{% url 'account_logout' %}">LOGOUT</a>
+                                <hr>
+                            {% else %}
+                                <a href="{% url 'account_signup' %}">REGISTER</a>
+                                <hr>
+                                <a href="{% url 'account_login' %}">LOGIN</a>
+                                <hr>
+                            {% endif %}
+                        </div>
+                    </li>
+                </div>
                 <li>
                     <br>
-                    <div class="profile-icon">
-                        <a href="#">
-                            <span class="material-symbols-outlined">person</span>
-                            <p>MY ACCOUNT</p>
-                        </a>
-                    </div>
-                  
-                    <div class="user-profile-drop-down-menu">
-                        {% if request.useris_authenticated %}
-                            {% if request.user.is_superuser %}
-                            <a href="">PRODUCT MANAGEMENT</a>
-                            <hr>
-                            {% endif %}
-                            <a href="">PROFILE</a>
-                            <hr>
-                            <a href="{% url 'account_logout' %}">LOGOUT</a>
-                            <hr>
+                    <a href="">
+                        <span class="material-symbols-outlined">shopping_bag</span>
+                        <p>SHOPPING BAG
+                            <br>
+                            {% if grand_total %}
+                            ${{ grand_total|floatformat:2 }}
                         {% else %}
-                            <a href="{% url 'account_signup' %}">REGISTER</a>
-                            <hr>
-                            <a href="{% url 'account_login' %}">LOGIN</a>
-                            <hr>
-                        {% endif %}
-                    </div>
+                            $0.00
+                        </p>
+                     
+                    {% endif %}
+                    </a>
                 </li>
-            </div>
-            <li>
-                <br>
-                <a href="">
-                    <span class="material-symbols-outlined">shopping_bag</span>
-                    <p>SHOPPING BAG
-                        <br>
-                        {% if grand_total %}
-                        ${{ grand_total|floatformat:2 }}
-                    {% else %}
-                        $0.00
-                    </p>
-                 
-                {% endif %}
-                </a>
-            </li>
-        </ul>
-    </div>
-</header>
-
-    <!-- Mobile Drop Down Navigation -->
-    <div class="mobile-nav-bar">
-        {% include 'includes/main-navigation.html' %}
-    </div>
+            </ul>
+        </div>
+    </header>
     
-    <!-- Mobile Drop Down Search Bar -->
-    <div class="mobile-serach-bar-container">
-        <hr>
-        <form method="GET" action="">
-            <div class="serach-bar">
-                <button class="serach-bar-button">
-                    <span class="material-symbols-outlined search-icon search-icon-mobile">search</span>
-                </button>
-                <input type="text" name="q" placeholder="search for products, brands, specific skin concern or type">
-            </div>
+        <!-- Mobile Drop Down Navigation -->
+        <div id="mobile-nav-bar">
+            {% include 'includes/main-navigation.html' %}
+        </div>
+    
+        <!-- Mobile Drop Down Search Bar -->
+        <div class="mobile-serach-bar-container">
             <hr>
-        </form>
-    </div>
+            <form method="GET" action="">
+                <div class="serach-bar">
+                    <button class="serach-bar-button">
+                        <span class="material-symbols-outlined search-icon search-icon-mobile">search</span>
+                    </button>
+                    <input type="text" name="q" placeholder="search for products, brands, specific skin concern or type">
+                </div>
+                <hr>
+            </form>
+        </div>
+</div>
 

@@ -12,10 +12,10 @@ for (let i = 0; i < userProfileIcon.length; i++) {
 
 // Mobile Navigation Dropdown 
 const hamburger = document.querySelector(".burger-menu"); 
-const navMenu = document.querySelector(".mobile-nav-bar"); 
+const navMenu = document.querySelector(".main-navigation"); 
 
 hamburger.addEventListener("click", () => {
-    navMenu.classList.toggle("active");  
+    navMenu.classList.toggle("nav-active");
 })
 
 // Mobile Serach Bar Dropdown 
