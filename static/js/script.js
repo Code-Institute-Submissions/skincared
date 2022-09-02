@@ -1,5 +1,5 @@
 // Main Header User Profile Dropdown 
-const userProfileIcon = document.getElementById('profile-icon');
+const userProfileIcon = document.querySelector('.profile-icon');
 const userProfileDropDown = document.querySelector('.user-profile-drop-down-menu'); 
 
 userProfileIcon.addEventListener("click", function(){

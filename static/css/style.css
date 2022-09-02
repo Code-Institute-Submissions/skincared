@@ -244,6 +244,7 @@ footer div {
 .mobile-header-container {
     justify-content: space-between;
     align-items: center;
+    display: none;
 }
 
 /* Burger Menu & Serach Icon */
@@ -261,7 +262,7 @@ footer div {
     cursor: pointer;
 }
 
-.mobile-nav-bar{
+.mobile-nav-bar {
     display: none;
 }
 
@@ -280,6 +281,11 @@ footer div {
     display: none;
     background-color: #ffffff;
 }
+
+.search-icon-mobile {
+    margin-left: 20px;
+}
+
 
 .active {
     display: block;
@@ -310,3 +316,22 @@ footer div {
     letter-spacing: 0;
 }
 
+/* Media Queries */ 
+
+@media only screen and (max-width: 900px) {
+    .main-header {
+        display: none;
+    }
+
+    .main-navigation {
+        display: none;
+    }
+
+    .mobile-header-container {
+        display: flex;
+    }
+
+    .mobile-nav-bar {
+        display: flex;
+    }
+}
