@@ -24,7 +24,7 @@ a:hover {
 
 
 hr {
-    border-bottom: 0.5px solid #000000;
+    border-bottom: 0.8px solid #000000;
 }
 
 ::placeholder  {
@@ -272,7 +272,7 @@ footer div {
 }
 
 .mobile-header-icons-divider {
-    border-left: 0.5px solid #000000;
+    border-left: 0.8px solid #000000;
     margin-left: 10px;
 }
 
@@ -283,6 +283,7 @@ footer div {
 
 .mobile-serach-bar-container {
     width: 100%;
+    margin-bottom: 0;
     display: none;
     background-color: #ffffff;
 }
@@ -300,6 +301,7 @@ footer div {
 .logo-mobile-container {
     width: 85px;
     height: 85px;
+    box-shadow: -0.5px -0.5px #ffffff, -1px -1px #353935, 0.5px 0.5px #ffffff, 1px 1px #353935, -1.5px -1.5px #ffffff, -2.5px -2.5px #353935,1.5px 1.5px #ffffff, 2.5px 2.5px #353935,  -3px -3px #ffffff, -4px -4px #353935, 3px 3px #ffffff, 4px 4px #353935, -3.5px -3.5px #ffffff, -4.5px -4.5px #353935, 3.5px 3.5px #ffffff, 4.5px 4.5px #353935, -4px -4px #ffffff, -5px -5px #000000;
 }
 
 .logo-mobile {
@@ -344,11 +346,8 @@ footer div {
     }
 
     .navigation-bar-container {
-        margin-top: 40px;
         background-color: #ffffff;
-        font-family: 'Roboto', sans-serif;
-        letter-spacing: 1px;
-        /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 10px 0px; */
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 10px 0px;
     }
 
     .navigation-items-container a {
@@ -382,5 +381,10 @@ footer div {
     
     .navigation-options h3 {
         font-size: 1.2årem;
-    }       
+    }
+
+    .test {
+        display: flex;
+        flex-direction: column;
+    }
 }
