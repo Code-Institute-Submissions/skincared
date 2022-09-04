@@ -372,13 +372,7 @@ footer div {
     .navigation-bar-container {
         background-color: #ffffff;
     }
-
-    .navigation-items-container {
-        display: flex; 
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
+    
     .navigation-items-container a {
         font-size: 1.5rem;
     }
@@ -489,6 +483,24 @@ footer div {
 
 }
 
+
+@media only screen and (max-width: 500px) {
+    .navigation-items-container a {
+        font-size: 1.4rem;
+    }
+
+    .navigation-options h3 {
+        font-size: 1.2rem;
+    }
+
+    .navigation-options a {
+        font-size: 1rem;
+    }
+
+}
+
+
+
 @media only screen and (max-width: 400px) {
     #user-profile-shoppingcart-container {
         margin-right: 10px;
@@ -505,6 +517,11 @@ footer div {
     .fa-brands {
         font-size: 1.4rem;
     }
+
+    .navigation-items-container a {
+        font-size: 1.3rem;
+    }
+
 }
 
 @media only screen and (max-width: 350px) {
@@ -525,6 +542,19 @@ footer div {
         margin-left: 5px;
         bottom: 2px;
     }
+
+    .navigation-items-container a {
+        font-size: 1rem;
+    }
+
+    .navigation-options h3 {
+        font-size: 0.9rem;
+    }
+
+    .navigation-options a {
+        font-size: 0.8rem;
+    }
+
 
 }
 
