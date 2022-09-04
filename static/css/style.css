@@ -2,12 +2,13 @@
 /* Global */ 
 
 * {
-    padding: 0; 
-    margin: 0;
+    box-sizing: border-box;
 }
 
 html{
     font-size: 62.5%;
+    padding: 0; 
+    margin: 0;
 }
 
 body, form {
@@ -173,7 +174,8 @@ header {
     flex-direction: row;
     justify-content: space-around;
     font-size: 1.6rem;
-    background-color: #f5f5f5;   
+    background-color: #f5f5f5; 
+    margin-top: auto;  
 }
 
 footer li {
@@ -208,7 +210,10 @@ footer div {
     font-family: 'Roboto', sans-serif;
     letter-spacing: 1px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 10px 0px;
+    position: sticky;
+    top: 135px;
 }
+
 .navigation-items-container {
     display: flex; 
     flex-direction: row;
@@ -336,11 +341,11 @@ footer div {
     .main-navigation {
         display: none;
         position: absolute;
-        top: 110px;
+        top: 70px;
         background-color: #f5f5f5;
 
     }
-
+    
     .nav-active {
         display: block;
     }
@@ -355,14 +360,6 @@ footer div {
         justify-content: space-around;
         width: 100vw;
     }
-
-
-
-
-
-
-
-
     
     .navigation-options h3 {
         font-size: 1.3rem;
