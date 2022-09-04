@@ -267,6 +267,7 @@ footer div {
 .burger-menu-serach-bar-container {
     padding-right: 0px;
 }
+
 .fa-bars {
     font-size: 2rem;
     cursor: pointer;
@@ -282,7 +283,6 @@ footer div {
 }
 
 .search-bar-mobile {
-    margin-right: 25px;
     cursor: pointer;
 }
 
@@ -294,8 +294,7 @@ footer div {
 }
 
 .search-icon-mobile {
-    margin-left: 20px;
-    padding-left: 0;;
+    padding-left: 0;
 }
 
 .active {
@@ -422,6 +421,30 @@ footer div {
 
     }
     
+    .user-profile-container-mobile p {
+        font-size: 0.9rem;
+    }
+
+    .shopping-bag p {
+        display: none;
+    }
+
+    .shopping-bag {
+        margin-left: 20px;
+    }
+
+    .user-profile-container-mobile p {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    header {
+        flex-direction: space-between;
+    }
+
     .logo-mobile-container {
         width: 60px;
         height: 60px;
@@ -458,13 +481,10 @@ footer div {
         margin-left: 20px;
     }
 
-    .mobile-serach-bar-container {
-        font-size: 1rem;
+    .mobile-header-icons-divider {
+        border-left: 0.8px solid #000000;
+        margin-left: 10px;
     }
-
-}
-
-@media only screen and (max-width: 650px) {
 
 }
 
