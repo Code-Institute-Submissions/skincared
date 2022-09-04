@@ -40,17 +40,12 @@
                             {% if request.useris_authenticated %}
                                 {% if request.user.is_superuser %}
                                 <a href="">PRODUCT MANAGEMENT</a>
-                                <hr>
                                 {% endif %}
                                 <a href="">PROFILE</a>
-                                <hr>
                                 <a href="{% url 'account_logout' %}">LOGOUT</a>
-                                <hr>
                             {% else %}
                                 <a href="{% url 'account_signup' %}">REGISTER</a>
-                                <hr>
                                 <a href="{% url 'account_login' %}">LOGIN</a>
-                                <hr>
                             {% endif %}
                         </div>
                     </li>

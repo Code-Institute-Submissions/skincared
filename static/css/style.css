@@ -25,7 +25,7 @@ a:hover {
 
 
 hr {
-    border-bottom: 0.8px solid #000000;
+    border-bottom: 1px solid #000000;
 }
 
 ::placeholder  {
@@ -42,7 +42,7 @@ hr {
     font-size: 1.5rem;
 }
 
-.logo-mobile-container, .fa-bars {
+.logo-mobile-container, .fa-bars, .user-profile-drop-down-menu {
     box-shadow: -0.5px -0.5px #ffffff, -1px -1px #353935, 0.5px 0.5px #ffffff, 1px 1px #353935, -1.5px -1.5px #ffffff, -2.5px -2.5px #353935,1.5px 1.5px #ffffff, 2.5px 2.5px #353935,  -3px -3px #ffffff, -4px -4px #353935, 3px 3px #ffffff, 4px 4px #353935, -3.5px -3.5px #ffffff, -4.5px -4.5px #353935, 3.5px 3.5px #ffffff, 4.5px 4.5px #353935, -4px -4px #ffffff, -5px -5px #000000;
 }
 
@@ -148,7 +148,8 @@ header {
 }
 
 .user-profile-drop-down-menu {
-    display: none;  
+    display: none;
+    background-color: #ffffff;
 }
 
 .profile-active {
@@ -401,6 +402,11 @@ footer div {
         justify-content: space-evenly;
         padding-left: 0;
     }
+
+    .user-profile-drop-down-menu {
+        border: 1px solid #000000;
+    }
+    
 }
 
 @media only screen and (max-width: 800px) {
