@@ -95,7 +95,7 @@ header {
 
 /* Serach Bar */
 
-#serach-bar-container {
+.serach-bar-container {
     width: 20%;
     background-color: #ffffff;
 }
@@ -259,12 +259,11 @@ footer div {
 /* Burger Menu & Serach Icon */
 
 .burger-menu-serach-bar-container {
-    width: 150px;
+    width: 100px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-left: 40px;
-    padding-right: 0px;
 }
 
 .burger-menu-serach-bar-container {
@@ -385,17 +384,33 @@ footer div {
     .navigation-options a {
         font-size: 1.1rem;
         padding-top: 5px;
-    }   
+    }
+
+    .serach-bar-container {
+        width: 0;
+    }
+
+    .search-bar-mobile {
+        transform: rotate(-45deg);
+        margin: 5px 0 0 0;
+    }
+
+    #user-profile-shoppingcart-container ul {
+        display: flex; 
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-left: 0;
+    }
 }
 
 @media only screen and (max-width: 800px) {
-    #user-profile-container {
+    /* #user-profile-container {
         margin-right: 40px;
-    }
+    } */
 
-    .logo-container {
+    /* .logo-container {
         margin-right: 30px;
-    }
+    } */
 }
 
 @media only screen and (max-width: 700px) {
@@ -417,8 +432,6 @@ footer div {
     #user-profile-container {
         margin-right: 30px;
     }
-    
-  
 }
 
 
