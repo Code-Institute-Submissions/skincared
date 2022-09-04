@@ -74,14 +74,12 @@
         <div id="user-profile-shoppingcart-container">
             <ul>
                 <div id="user-profile-container">
-                    <li>
-                        <div class="profile-icon">
-                            <a href="#">
-                                <span class="material-symbols-outlined">person</span>
-                                <p>MY ACCOUNT</p>
-                            </a>
-                        </div>
-                      
+                    <li class="header-right-icons">
+                        <a href="#">
+                            <span class="material-symbols-outlined profile-icon">person</span>
+                            <p>MY ACCOUNT</p>
+                        </a>
+
                         <div class="user-profile-drop-down-menu">
                             {% if request.useris_authenticated %}
                                 {% if request.user.is_superuser %}
@@ -102,7 +100,7 @@
                     </li>
                 </div>
 
-                <li>
+                <li class="header-right-icons">
                     <a href="">
                         <span class="material-symbols-outlined">shopping_bag</span>
                         <p>SHOPPING BAG
