@@ -429,25 +429,20 @@ footer div {
         display: none;
     }
 
-    .shopping-bag {
-        margin-left: 20px;
-    }
-
     .user-profile-container-mobile p {
         display: none;
     }
-
 }
 
 @media only screen and (max-width: 600px) {
 
     header {
-        flex-direction: space-between;
+        margin: 0px;
     }
 
     .logo-mobile-container {
-        width: 60px;
-        height: 60px;
+        width: 65px;
+        height: 65px;
         box-shadow: -0.5px -0.5px #ffffff, -1px -1px #353935, 0.5px 0.5px #ffffff, 1px 1px #353935, -1.5px -1.5px #ffffff, -2.5px -2.5px #353935,1.5px 1.5px #ffffff, 2.5px 2.5px #353935,  -3px -3px #ffffff, -4px -4px #353935, 3px 3px #ffffff, 4px 4px #353935, -3.5px -3.5px #ffffff, -4.5px -4.5px #353935, 3.5px 3.5px #ffffff, 4.5px 4.5px #353935, -4px -4px #ffffff, -5px -5px #000000;
     }
 
@@ -457,49 +452,49 @@ footer div {
     }
     
     .logo-mobile-bottom {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         bottom: 5px;
     }
 
-    .user-profile-container-mobile span {
+    .fa-bars {
+        font-size: 1.5rem;
+    }
+
+    .serach-bar-container span {
         font-size: 2rem;
-    }
-    
-    .shopping-bag span {
-        font-size: 2rem;
-    }
-
-    .user-profile-container-mobile p {
-        font-size: 0.9rem;
-    }
-
-    .shopping-bag p {
-        font-size: 0.9rem;
-    }
-
-    .shopping-bag {
-        margin-left: 20px;
-    }
-
-    .mobile-header-icons-divider {
-        border-left: 0.8px solid #000000;
-        margin-left: 10px;
     }
 
 }
 
-
-/* @media only screen and (max-width: 600px) {
-    #user-profile-container {
+@media only screen and (max-width: 400px) {
+    #user-profile-shoppingcart-container {
         margin-right: 20px;
     }
+
+    .burger-menu-serach-bar-container {
+        margin-left: 20px;
+    }
 }
 
-
-@media only screen and (max-width: 500px) {
-    #user-profile-container {
-        margin-right: 10px;
+@media only screen and (max-width: 350px) {
+    .logo-mobile-container {
+        width: 45px;
+        height: 45px;
+        position: relative;
+        box-shadow: -0.5px -0.5px #ffffff, -1px -1px #353935, 0.5px 0.5px #ffffff, 1px 1px #353935, -1.5px -1.5px #ffffff, -2.5px -2.5px #353935,1.5px 1.5px #ffffff, 2.5px 2.5px #353935,  -3px -3px #ffffff, -4px -4px #353935, 3px 3px #ffffff, 4px 4px #353935, -3.5px -3.5px #ffffff, -4.5px -4.5px #353935, 3.5px 3.5px #ffffff, 4.5px 4.5px #353935, -4px -4px #ffffff, -5px -5px #000000;
     }
-} */
+
+    .logo-mobile {
+        font-size: 1.5rem;
+        text-shadow: 1px 1px #353935;
+    }
+    
+    .logo-mobile-bottom {
+        font-size: 1rem;
+        margin-left: 5px;
+        bottom: 2px;
+    }
+
+}
 
 
