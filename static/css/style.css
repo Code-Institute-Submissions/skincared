@@ -179,7 +179,11 @@ header {
 
 footer li {
     display: inline-block;
-    letter-spacing: 10px;
+    letter-spacing: 5px;
+}
+
+.fa-brands {
+    font-size: 1.8rem;
 }
 
 footer a {
@@ -412,15 +416,6 @@ footer div {
 }
 
 @media only screen and (max-width: 700px) {
-    .footer {
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        justify-items: center;
-        text-align: center;
-
-    }
-    
     .user-profile-container-mobile p {
         font-size: 0.9rem;
     }
@@ -444,6 +439,7 @@ footer div {
         width: 65px;
         height: 65px;
         box-shadow: -0.5px -0.5px #ffffff, -1px -1px #353935, 0.5px 0.5px #ffffff, 1px 1px #353935, -1.5px -1.5px #ffffff, -2.5px -2.5px #353935,1.5px 1.5px #ffffff, 2.5px 2.5px #353935,  -3px -3px #ffffff, -4px -4px #353935, 3px 3px #ffffff, 4px 4px #353935, -3.5px -3.5px #ffffff, -4.5px -4.5px #353935, 3.5px 3.5px #ffffff, 4.5px 4.5px #353935, -4px -4px #ffffff, -5px -5px #000000;
+        position: relative;
     }
 
     .logo-mobile {
@@ -454,6 +450,7 @@ footer div {
     .logo-mobile-bottom {
         font-size: 1.5rem;
         bottom: 5px;
+        margin-left: 10px;
     }
 
     .fa-bars {
@@ -464,15 +461,38 @@ footer div {
         font-size: 2rem;
     }
 
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .mailing-info {
+        margin-bottom: 10px;
+    }
+
+    .trade-mark {
+        margin-bottom: 10px;
+    }
+
 }
 
 @media only screen and (max-width: 400px) {
     #user-profile-shoppingcart-container {
-        margin-right: 20px;
+        margin-right: 10px;
+    }
+
+    .footer {
+        font-size: 1.2rem;
     }
 
     .burger-menu-serach-bar-container {
-        margin-left: 20px;
+        margin-left: 10px;
+    }
+
+    .fa-brands {
+        font-size: 1.4rem;
     }
 }
 
@@ -496,5 +516,7 @@ footer div {
     }
 
 }
+
+
 
 
