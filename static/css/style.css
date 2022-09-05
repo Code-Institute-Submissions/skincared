@@ -7,12 +7,12 @@
 
 html{
     font-size: 62.5%;
-    padding: 0; 
-    margin: 0;
 }
 
 body, form {
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    padding: 0; 
+    margin: 0;
 }
 
 ul {
@@ -38,7 +38,7 @@ hr {
      
 }
 
-.logo-container {
+.logo-container, .mobile-navigation-container {
     box-shadow: -1px -1px #ffffff, -2px -2px #353935, 1px 1px #ffffff, 2px 2px #353935, -3px -3px #ffffff, -4px -4px #353935, 3px 3px #ffffff, 4px 4px #353935,  -4px -4px #ffffff, -5px -5px #353935, 5px 5px #ffffff, 6px 6px #353935, -5px -5px #ffffff, -5px -5px #353935, 6px 6px #ffffff, 7px 7px #353935, -7px -7px #ffffff, -8px -8px #000000;
 }
 
@@ -151,6 +151,7 @@ header {
 .shopping-bag {
     margin-left: 40px;
 }
+
 
 .user-profile-drop-down-menu {
     display: none;
@@ -324,7 +325,8 @@ footer div {
 /* Mobile Navigation Menu */
 
 .mobile-navigation-container {
-    width: 100vw;
+    height: 100vh;
+    width: 200px;
     background-color: #ffffff;
     text-align: center;
     display: flex;
@@ -332,19 +334,19 @@ footer div {
     border: 0.8px solid black;
     display: none;
     margin-top: 30px;
-    background-color: #000000;
+    color: #000000;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+
 }
 
-/* .mobile-navigation-container > h2{ 
+.mobile-navigation-container > h2{ 
     font-size: 1.5rem;
-    margin-top: 10px;
-    color: #ffffff;
-} */
-
+    margin-top: 10px; 
+}
 
 .mobile-navigation-container a {
     margin-top: 5px;
-    color: #ffffff;
+    color: #000000; 
 }
 
 
@@ -376,6 +378,7 @@ footer div {
     display: flex; 
     flex-direction: column;
     background-color: #ffffff;
+    position: relative;
 } 
 
 /* Logo */
@@ -474,7 +477,6 @@ footer div {
 }
 
 @media only screen and (max-width: 800px) {
-
 }
 
 @media only screen and (max-width: 700px) {
