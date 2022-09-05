@@ -12,7 +12,8 @@ for (let i = 0; i < userProfileIcon.length; i++) {
 
 // Mobile Navigation Dropdown 
 const hamburger = document.querySelector(".burger-menu"); 
-const navMenu = document.querySelector(".main-navigation"); 
+// Change Once Done Styling
+const navMenu = document.querySelector(".mobile-navigation-container"); 
 
 hamburger.addEventListener("click", () => {
     navMenu.classList.toggle("nav-active");
