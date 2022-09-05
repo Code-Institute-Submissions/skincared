@@ -42,7 +42,7 @@ hr {
     font-size: 1.5rem;
 }
 
-.logo-mobile-container, .fa-bars, .user-profile-drop-down-menu {
+.logo-mobile-container, .fa-bars, .user-profile-drop-down-menu, .navigation-options  {
     box-shadow: -0.5px -0.5px #ffffff, -1px -1px #353935, 0.5px 0.5px #ffffff, 1px 1px #353935, -1.5px -1.5px #ffffff, -2.5px -2.5px #353935,1.5px 1.5px #ffffff, 2.5px 2.5px #353935,  -3px -3px #ffffff, -4px -4px #353935, 3px 3px #ffffff, 4px 4px #353935, -3.5px -3.5px #ffffff, -4.5px -4.5px #353935, 3.5px 3.5px #ffffff, 4.5px 4.5px #353935, -4px -4px #ffffff, -5px -5px #000000;
 }
 
@@ -245,11 +245,15 @@ footer div {
     font-size: 1.5rem;
 }
 
+.navigation-options a {
+    font-size: 1.2rem;
+    padding-top: 5px;
+}
+
 .navigation-options { 
     background-color: #ffffff;
     display: none;
-    padding: 10px;
-    width: 84%;
+    padding: 5px;
 }
 
 .navigation-item:hover .navigation-options{
@@ -257,13 +261,9 @@ footer div {
     flex-direction: column; 
     justify-content: space-around;
     position: absolute;
-    background-color: red;
 }
 
-.navigation-options a {
-    font-size: 1.3rem;
-    padding-top: 5px;
-}
+
 
 /* Mobile Header: Burger Menu, Serach Icon, Logo, User Profile & Shopping Bag */
 
@@ -271,6 +271,7 @@ footer div {
     justify-content: space-between;
     align-items: center;
     display: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 10px 0px;
 }
 
 /* Burger Menu & Serach Icon */
@@ -330,7 +331,7 @@ footer div {
     flex-direction: column;
     border: 0.8px solid black;
     display: none;
-    margin: 20px 0 0 10px;
+    margin: 10px 0 0 10px;
     color: #000000;
 }
 
@@ -534,6 +535,18 @@ footer div {
         margin-bottom: 10px;
     }
 
+    .mobile-header-title { 
+        font-size: 1.2rem;
+    }
+
+    .mobile-navigation-container a {
+        font-size: 1.3rem;
+    }
+
+    .navigation-options-mobile a {
+        font-size: 1.1em;
+    }
+
 }
 
 
@@ -607,4 +620,17 @@ footer div {
     .navigation-options a {
         font-size: 0.8rem;
     }
+
+    .mobile-header-title { 
+        font-size: 1.1rem;
+    }
+
+    .mobile-navigation-container a {
+        font-size: 1.2rem;
+    }
+
+    .navigation-options-mobile a {
+        font-size: 1em;
+    }
+
 }
