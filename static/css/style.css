@@ -34,7 +34,7 @@ hr {
      
 }
 
-.logo-container {
+.logo-container, .mobile-navigation-container  {
     box-shadow: -1px -1px #ffffff, -2px -2px #353935, 1px 1px #ffffff, 2px 2px #353935, -3px -3px #ffffff, -4px -4px #353935, 3px 3px #ffffff, 4px 4px #353935,  -4px -4px #ffffff, -5px -5px #353935, 5px 5px #ffffff, 6px 6px #353935, -5px -5px #ffffff, -5px -5px #353935, 6px 6px #ffffff, 7px 7px #353935, -7px -7px #ffffff, -8px -8px #000000;
 }
 
@@ -562,8 +562,14 @@ footer div {
     text-align: center;
     display: flex;
     flex-direction: column;
-    background-color: aqua;
+    border: 0.8px solid black;
     display: none;
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 10px 0px; */
+
+}
+
+.mobile-navigation-container h2 {
+    margin-top: 5px;
 }
 
 .mobile-navigation-menus {
