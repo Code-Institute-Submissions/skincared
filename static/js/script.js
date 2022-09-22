@@ -1,4 +1,4 @@
-// Main Header & Mobile Header  User Profile Dropdown 
+// User Profile Dropdown 
 const userProfileIcon = document.querySelectorAll('.profile-icon');
 const userProfileDropDown = document.querySelectorAll('.user-profile-drop-down-menu'); 
 
@@ -12,11 +12,10 @@ for (let i = 0; i < userProfileIcon.length; i++) {
 
 // Mobile Navigation Dropdown 
 const hamburger = document.querySelector(".burger-menu"); 
-// Change Once Done Styling
 const navMenu = document.querySelector(".mobile-navigation-container"); 
 
 hamburger.addEventListener("click", () => {
-    navMenu.classList.toggle("nav-active");
+    navMenu.classList.toggle("mobile-nav-active");
 })
 
 // Mobile Serach Bar Dropdown 
@@ -24,5 +23,5 @@ const searchIcon = document.querySelector(".search-bar-mobile");
 const search = document.querySelector(".mobile-serach-bar-container");
 
 searchIcon.addEventListener("click", () =>{
-    search.classList.toggle("active");
+    search.classList.toggle("search-active");
 })

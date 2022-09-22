@@ -317,7 +317,7 @@ footer div {
     padding-left: 0;
 }
 
-.active {
+.search-active {
     display: block;
 }
 
@@ -350,7 +350,7 @@ footer div {
     padding-left: 0px;
 } 
 
-.nav-active {
+.mobile-nav-active {
     display: block; 
 }
 
