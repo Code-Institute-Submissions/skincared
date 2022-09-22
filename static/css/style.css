@@ -1,18 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@500&family=Water+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Raleway:wght@700&family=Roboto&family=Water+Brush&display=swap');
 /* Global */ 
 
 * {
     box-sizing: border-box;
+    padding: 0; 
+    margin: 0;
 }
 
 html{
     font-size: 62.5%;
 }
 
-body, form {
+body {
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-    padding: 0; 
-    margin: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 ul {
@@ -42,8 +45,12 @@ hr {
     font-size: 1.5rem;
 }
 
-.logo-mobile-container, .fa-bars, .user-profile-drop-down-menu, .navigation-options  {
+.logo-mobile-container, .fa-bars, .user-profile-drop-down-menu, .hero-text a, .footer-wrapper {
     box-shadow: -0.5px -0.5px #ffffff, -1px -1px #353935, 0.5px 0.5px #ffffff, 1px 1px #353935, -1.5px -1.5px #ffffff, -2.5px -2.5px #353935,1.5px 1.5px #ffffff, 2.5px 2.5px #353935,  -3px -3px #ffffff, -4px -4px #353935, 3px 3px #ffffff, 4px 4px #353935, -3.5px -3.5px #ffffff, -4.5px -4.5px #353935, 3.5px 3.5px #ffffff, 4.5px 4.5px #353935, -4px -4px #ffffff, -5px -5px #000000;
+}
+
+.navigation-options-contianer, .mobile-dropdown {
+    font-family: 'Abel', sans-serif;
 }
 
 button:focus{
