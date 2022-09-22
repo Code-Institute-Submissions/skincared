@@ -68,6 +68,7 @@ header {
     margin-top: 20px;
     position: sticky;
     top: 0;
+    z-index: 999999;
 }
 
 /* Logo */
@@ -174,9 +175,12 @@ header {
 
 /* Footer - */
 
+.footer-wrapper {
+    margin-top: auto;
+    background-color: #f5f5f5;
+}
+
 .footer-container {
-    position: fixed;
-    bottom: 0;
     width: 100%;
 }
 
@@ -185,8 +189,6 @@ header {
     flex-direction: row;
     justify-content: space-around;
     font-size: 1.6rem;
-    background-color: #f5f5f5; 
-    margin-top: auto;  
 }
 
 footer li {
