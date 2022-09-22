@@ -222,14 +222,18 @@ footer div {
 
 /* Main Navigation */
 
+.nav-container {
+    position: sticky;
+    top: 135px;
+    z-index: 999999;
+}
+
 .navigation-bar-container {
-    margin-top: 40px;
+    margin-top: 20px;
     background-color: #f5f5f5;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 1px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 10px 0px;
-    position: sticky;
-    top: 135px;
 }
 
 .navigation-items-container {
@@ -239,6 +243,7 @@ footer div {
     color: #000000;
     width: 100vw;
     padding: 0;
+    margin-bottom: 0;
 }
 
 .navigation-items-container li {
@@ -250,29 +255,45 @@ footer div {
     font-size: 1.6rem;
 }
 
+.navigation-options-contianer {
+    margin: auto;
+    background-color: #000000;
+    position: relative;
+    display: none;
+}
+
+.main-nav-js {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navigation-options {
+    width: 80%;
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 250px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    flex-wrap: wrap;
+    height: 250px;
+    padding-top: 20px;
+}
+
 .navigation-options h3 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    margin-left: 20px;
 }
 
 .navigation-options a {
-    font-size: 1.2rem;
-    padding-top: 5px;
+    font-size: 1.3rem;
+    margin-left: 20px;
+    color: #000000;
+    padding: 2px;
 }
-
-.navigation-options { 
-    background-color: #ffffff;
-    display: none;
-    padding: 5px;
-}
-
-.navigation-item:hover .navigation-options{
-    display: flex;
-    flex-direction: column; 
-    justify-content: space-around;
-    position: absolute;
-}
-
-
 
 /* Mobile Header: Burger Menu, Serach Icon, Logo, User Profile & Shopping Bag */
 
