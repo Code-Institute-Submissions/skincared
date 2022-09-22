@@ -302,6 +302,8 @@ footer div {
     align-items: center;
     display: none;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 10px 0px;
+    position: sticky;
+    top: 0;
 }
 
 /* Burger Menu & Serach Icon */
@@ -329,6 +331,14 @@ footer div {
 
 .mobile-header-icons-divider {
     border-left: 0.8px solid #000000;
+    margin-left: 10px;
+}
+
+.navigation-item-mobile hr {
+    border-bottom: 0.8px solid #ffffff; 
+}
+
+.navigation-item-mobile h3 {
     margin-left: 10px;
 }
 
