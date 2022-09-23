@@ -45,7 +45,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     # SkinCared project apps 
     'home',
-    'products'
+    'products',
 ]
 
 MIDDLEWARE = [
