@@ -488,7 +488,7 @@
             "about": "Nécessaire’s founders Nick Axelrod and Randi Christiansen decided to focus on an unglamorous beauty category: body care. 'There was not a lot of innovation or newness — the same body lotions, the same bodywashes — and there was no redefinition of what other products could live there,' explains Christiansen. 'We felt we could deliver products that were ten times better by putting real skin-care ingredients into them.' They formulated their lotion with hyaluronic acid, peptides, and antioxidants, and filled their Body Wash with niacinamide and a slew of essential oils, getting it to foam with plant-derived surfactants.", 
             "image": "nécessaire.jpeg"
         }
-    }
+    },
     {
         "pk": 50,
         "model": "products.brand", 

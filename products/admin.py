@@ -1,3 +1,7 @@
 from django.contrib import admin
+from .models import Skincare, Brand, ProductType
 
-# Register your models here.
+
+admin.site.register(Skincare)
+admin.site.register(Brand)
+admin.site.register(ProductType)
