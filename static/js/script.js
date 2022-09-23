@@ -14,8 +14,8 @@ for (let i = 0; i < userProfileIcon.length; i++) {
 const navButtonSkin = document.querySelector(".js-nav-button-skincare");
 const navDropDownSkin = document.querySelector(".skincare-container")
 
-navButtonSkin.addEventListener("mouseover", () => {
-    navDropDownSkin.classList.add("main-nav-js")
+navButtonSkin.addEventListener("mouseenter", () => {
+    navDropDownSkin.classList.toggle("main-nav-js")
 })
 
 navDropDownSkin.addEventListener("mouseleave", () => {
@@ -25,8 +25,8 @@ navDropDownSkin.addEventListener("mouseleave", () => {
 const navButtonBrand = document.querySelector(".js-nav-button-brands");
 const navDropDownBrand = document.querySelector(".brands-container")
 
-navButtonBrand.addEventListener("mouseover", () => {
-    navDropDownBrand.classList.add("main-nav-js")
+navButtonBrand.addEventListener("mouseenter", () => {
+    navDropDownBrand.classList.toggle("main-nav-js")
 })
 
 navDropDownBrand.addEventListener("mouseleave", () => {
@@ -36,8 +36,8 @@ navDropDownBrand.addEventListener("mouseleave", () => {
 const navButtonSkinType = document.querySelector(".js-nav-button-skin-type");
 const navDropDownSkinType = document.querySelector(".skin-type-container")
 
-navButtonSkinType.addEventListener("mouseover", () => {
-    navDropDownSkinType.classList.add("main-nav-js")
+navButtonSkinType.addEventListener("mouseenter", () => {
+    navDropDownSkinType.classList.toggle("main-nav-js")
 })
 
 navDropDownSkinType.addEventListener("mouseleave", () => {
@@ -47,8 +47,8 @@ navDropDownSkinType.addEventListener("mouseleave", () => {
 const navButtonSkinConcern = document.querySelector(".js-nav-button-skin-concern");
 const navDropDownSkinConcern = document.querySelector(".skin-concern-container")
 
-navButtonSkinConcern.addEventListener("mouseover", () => {
-    navDropDownSkinConcern.classList.add("main-nav-js")
+navButtonSkinConcern.addEventListener("mouseenter", () => {
+    navDropDownSkinConcern.classList.toggle("main-nav-js")
 })
 
 navDropDownSkinConcern.addEventListener("mouseleave", () => {
