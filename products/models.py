@@ -48,6 +48,50 @@ class Skincare(models.Model):
         ("SENSITIVE_SKIN", "Sensitive"),
     ]
 
+    ACNE = "A"
+    DARK_SPOTS = "DS"
+    ANTI_AGING = "AA"
+    WRINKLES = "W"
+    UNEVEN_SKIN_TONE = "UST"
+    TEXTURED_SKIN = "TS"
+    CONGESTION = "CG"
+    COMPROMISED_SKIN_BARRIER = "CSB"
+    SUN_DAMAGE = "SD"
+    BLACKHEADS = "BH"
+    ENLARGED_PORES = "EP"
+    OIL_CONTROL = "OC"
+    IRRITATION = "I"
+    RADIANCE = "R"
+    DULLNESS = "DU"
+    ROUGH_AND_BUMPY_SKIN = "RBS"
+    CALMING = "CA"
+    HYDRATION = "HY"
+    DRYNESS = "DR"
+    ECZEMA = "EC"
+
+    SKIN_CONCERN = [
+        ("ACNE", "Acne"),
+        ("DARK_SPOTS", "Dark Spots"),
+        ("ANTI_AGING", "Anti-aging"),
+        ("WRINKLES", "Wrinkles"),
+        ("UNEVEN_SKIN_TONE", "Uneven Skin Tone"),
+        ("TEXTURED_SKIN", "Textured Skin"),
+        ("CONGESTION", "Congestion"),
+        ("COMPROMISED_SKIN_BARRIER", "Compromised Skin Barrier"),
+        ("SUN_DAMAGE", "Sun Damage"),
+        ("BLACKHEADS", "Blackheads"),
+        ("ENLARGED_PORES", "Enlarged Pores"),
+        ("OIL_CONTROL", "Oil Control"),
+        ("IRRITATION", "Irritation"),
+        ("RADIANCE", "Radiance"),
+        ("DULNESS", "Dullness"),
+        ("ROUGH_AND_BUMPY_SKIN", "Rough & Bumpy Skin"),
+        ("CALMING", "Calming"),
+        ("HYDRATION", "Hydration"),
+        ("DRYNESS", "Dryness"),
+        ("ECZEMA", "Eczema"), 
+    ]
+    
     brand = models.ForeignKey(
         'Brand', null=True, blank=True, on_delete=models.SET_NULL
         )
@@ -63,9 +107,9 @@ class Skincare(models.Model):
         'ProductType', null=True, blank=True, on_delete=models.SET_NULL
         )
     product_subtype = models.CharField(max_length=150)
-    # star_ingredient = models.CharField(max_length=500)
+    star_ingredient = models.CharField(max_length=500)
     skin_type = models.CharField(max_length=500, choices=SKIN_TYPE)
-    # skin_concern = models.CharField(max_length=500)
+    skin_concern = models.CharField(max_length=500, choices=SKIN_CONCERN)
     cruelty_free = models.CharField(max_length=10)
     vegan = models.CharField(max_length=10)
     alcohol_free = models.CharField(max_length=10)
