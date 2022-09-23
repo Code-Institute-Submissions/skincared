@@ -89,7 +89,7 @@ class Skincare(models.Model):
         ("CALMING", "Calming"),
         ("HYDRATION", "Hydration"),
         ("DRYNESS", "Dryness"),
-        ("ECZEMA", "Eczema"), 
+        ("ECZEMA", "Eczema"),
     ]
     
     brand = models.ForeignKey(
