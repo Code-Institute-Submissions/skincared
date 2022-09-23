@@ -12,14 +12,14 @@ for (let i = 0; i < userProfileIcon.length; i++) {
 
 // Main Navigation 
 const navButtonSkin = document.querySelector(".js-nav-button-skincare");
-const navDropDowSkin = document.querySelector(".skincare-container")
+const navDropDownSkin = document.querySelector(".skincare-container")
 
 navButtonSkin.addEventListener("mouseover", () => {
-    navDropDowSkin.classList.add("main-nav-js")
+    navDropDownSkin.classList.add("main-nav-js")
 })
 
-navButtonSkin.addEventListener("mouseout", () => {
-    navDropDowSkin.classList.remove("main-nav-js")
+window.addEventListener("click", () => {
+    navDropDownSkin.classList.remove("main-nav-js")
 })
 
 const navButtonBrand = document.querySelector(".js-nav-button-brands");
@@ -29,11 +29,9 @@ navButtonBrand.addEventListener("mouseover", () => {
     navDropDownBrand.classList.add("main-nav-js")
 })
 
-navButtonBrand.addEventListener("mouseout", () => {
+window.addEventListener("click", () => {
     navDropDownBrand.classList.remove("main-nav-js")
 })
-
-
 
 const navButtonSkinType = document.querySelector(".js-nav-button-skin-type");
 const navDropDownSkinType = document.querySelector(".skin-type-container")
@@ -42,7 +40,7 @@ navButtonSkinType.addEventListener("mouseover", () => {
     navDropDownSkinType.classList.add("main-nav-js")
 })
 
-navButtonSkinType.addEventListener("mouseout", () => {
+window.addEventListener("click", () => {
     navDropDownSkinType.classList.remove("main-nav-js")
 })
 
@@ -53,7 +51,7 @@ navButtonSkinConcern.addEventListener("mouseover", () => {
     navDropDownSkinConcern.classList.add("main-nav-js")
 })
 
-navButtonSkinConcern.addEventListener("mouseout", () => {
+window.addEventListener("click", () => {
     navDropDownSkinConcern.classList.remove("main-nav-js")
 })
 
