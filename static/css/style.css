@@ -45,7 +45,7 @@ hr {
     font-size: 1.5rem;
 }
 
-.logo-mobile-container, .fa-bars, .user-profile-drop-down-menu, .hero-text a, .footer-wrapper {
+.logo-mobile-container, .fa-bars, .user-profile-drop-down-menu, .hero-text a {
     box-shadow: -0.5px -0.5px #ffffff, -1px -1px #353935, 0.5px 0.5px #ffffff, 1px 1px #353935, -1.5px -1.5px #ffffff, -2.5px -2.5px #353935,1.5px 1.5px #ffffff, 2.5px 2.5px #353935,  -3px -3px #ffffff, -4px -4px #353935, 3px 3px #ffffff, 4px 4px #353935, -3.5px -3.5px #ffffff, -4.5px -4.5px #353935, 3.5px 3.5px #ffffff, 4.5px 4.5px #353935, -4px -4px #ffffff, -5px -5px #000000;
 }
 
@@ -285,6 +285,7 @@ footer ul {
 .navigation-options h3 {
     font-size: 1.8rem;
     margin-left: 20px;
+    text-shadow: 0.5px 0.5px 0.5px #000000;
 }
 
 .navigation-options a {
