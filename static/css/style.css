@@ -49,7 +49,7 @@ hr {
     box-shadow: -0.5px -0.5px #ffffff, -1px -1px #353935, 0.5px 0.5px #ffffff, 1px 1px #353935, -1.5px -1.5px #ffffff, -2.5px -2.5px #353935,1.5px 1.5px #ffffff, 2.5px 2.5px #353935,  -3px -3px #ffffff, -4px -4px #353935, 3px 3px #ffffff, 4px 4px #353935, -3.5px -3.5px #ffffff, -4.5px -4.5px #353935, 3.5px 3.5px #ffffff, 4.5px 4.5px #353935, -4px -4px #ffffff, -5px -5px #000000;
 }
 
-.navigation-options-contianer, .mobile-dropdown, .brands-header {
+.navigation-options-contianer, .mobile-dropdown, .brands-header, .brands-list-container {
     font-family: 'Abel', sans-serif;
 }
 
@@ -548,6 +548,16 @@ footer ul {
     margin-top: 20px;
 }
 
+.brands-list-container a {
+    color: #000000;
+    font-size: 2rem;
+  
+}
+
+.brands-list a {
+    display: flex;
+    flex-direction: row;
+}
 
 /* .carousel-advertisment-container {
     max-width: 100vw;

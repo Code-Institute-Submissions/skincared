@@ -10,6 +10,10 @@ class Brand(models.Model):
     about = models.TextField()
     image = models.ImageField(null=True, blank=True)
 
+    class Meta:
+        '''Orders Brands Alphabetically '''
+        ordering = ['friendly_name']
+
     def __str__(self):
         return self.name
 
@@ -17,7 +21,7 @@ class Brand(models.Model):
         """ Returns Brands User Friendly Name """
         return self.friendly_name
 
-
+        
 class ProductType(models.Model):
     """ Product Type Model """
 

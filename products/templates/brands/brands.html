@@ -7,7 +7,11 @@
 </div>
 
 <div class="brands-list-container">
-    {{ brands }}
+    {% for brand in brands %}
+    <div class="brands-list">
+        <a href="">{{brand.friendly_name}}</a>  
+    </div>
+    {% endfor %}
 </div>
 
 
