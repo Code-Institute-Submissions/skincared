@@ -543,20 +543,35 @@ footer ul {
 /* Brands Page */
 
 .brands-header h2 {
-    font-size: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    font-size: 4rem;
+    margin-top: 20px;
+}
+
+.brands-header hr {
+    width: 50%;
+    margin: auto;
+}
+
+
+.brands-list-container {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-top: 20px;
 }
 
 .brands-list-container a {
     color: #000000;
-    font-size: 2rem;
-  
-}
-
-.brands-list a {
-    display: flex;
-    flex-direction: row;
+    font-size: 2rem;  
+    padding: 20px;
+    margin: 20px;
 }
 
 /* .carousel-advertisment-container {

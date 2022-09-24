@@ -4,18 +4,18 @@
 {% block content %}
 <div class="brands-header">
     <h2>BRANDS</h2>
+    <hr>
+    <hr>
+    <hr>
 </div>
 
 <div class="brands-list-container">
     {% for brand in brands %}
-    <div class="brands-list">
-        <a href="">{{brand.friendly_name}}</a>  
-    </div>
+    <a href="">
+        <div class="brands-list">
+            {{brand.friendly_name}}
+        </div>
+    </a>
     {% endfor %}
 </div>
-
-
-
-
-
 {% endblock %}
