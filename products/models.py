@@ -4,6 +4,7 @@ from django.contrib.postgres.fields import ArrayField
 
 class Brand(models.Model):
     """ Brands Model """
+
     name = models.CharField(max_length=200)
     friendly_name = models.CharField(max_length=200, null=True, blank=True)
     about = models.TextField()
@@ -19,6 +20,10 @@ class Brand(models.Model):
 
 class ProductType(models.Model):
     """ Product Type Model """
+
+    class Meta: 
+        verbose_name_plural = 'Product Type'
+
     name = models.CharField(max_length=200)
     friendly_name = models.CharField(max_length=200, null=True, blank=True)
     about = models.TextField()
@@ -35,6 +40,9 @@ class ProductType(models.Model):
 
 class Skincare(models.Model):
     """ Skincare Products Model """
+
+    class Meta: 
+        verbose_name_plural = 'Skincare'
 
     # NORMAL_SKIN = "N"
     # DRY_SKIN = "D"
